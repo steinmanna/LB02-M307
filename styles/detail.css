@@ -1,0 +1,55 @@
+body {
+    padding: 7% 7% 1% 10%;
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+h1 {
+    color: pink;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0 20px 0;
+    font-weight: bolder;
+}
+
+
+.p {
+    font-size: medium;
+    text-align: center;
+    color: black;
+}
+
+.detailcardtext{
+    font-size: medium;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    background-color: lightpink;
+}
+
+h2 {
+    color: pink;
+    text-align: justify;
+    margin: 20px 0 20px 0;
+    font-weight: bold;
+}
+
+h3 {
+    color: pink;
+    text-align: justify;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-box{
+    margin-bottom: 200px;
+    background-color: palevioletred;
+    
+}
+
+hr{
+    border-top: 5px dashed pink;
+}
+

@@ -1,0 +1,140 @@
+body {
+    padding: 7% 7% 1% 10%;
+}
+
+.navbar img{
+    background-color: white!important;
+    padding: 20px;
+    width: auto;
+    height: 200px;
+}
+
+.navbar li{
+    background-color: lightpink;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.navbar a{
+    color: palevioletred;
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.logo{
+    height: 120px!important;
+}
+
+h1 {
+    color: pink;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0 20px 0;
+    font-weight: bolder;
+}
+
+.p {
+    font-size: medium;
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    color: palevioletred;
+    text-align: justify;
+    margin: 20px 0 20px 0;
+    font-weight: bold;
+}
+
+
+
+.smoothie-name{
+    background-color: white;
+    padding: 0;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+  .p1{
+      margin-bottom: 20px;
+  }
+
+  .p2{
+      margin-top: 50px;
+  }
+
+  h3{
+    color: pink;
+    padding-top: 30px;
+    text-transform: uppercase;
+  }
+
+
+.smoothie{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.ingredients-title{
+  font-size: small;
+  margin: 0 0 0 40px;
+
+}
+.price{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+* {
+    box-sizing: content-box;
+  }
+  body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+  }
+
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+
+  footer{
+    color: palevioletred;
+    background-color: lightpink;
+    font-weight: bold;
+    padding: 40px;
+    font-size: large;
+    margin-top: 40px;
+      border-radius: 20px;
+  }
