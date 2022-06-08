@@ -36,10 +36,20 @@ button{
     padding: 10px;
 }
 
+.abort{
+    color: white;
+    background-color: pink;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 20px!important;
+    border-radius: 20px!important;
+    padding: 10px;
+}
 
 .newsletter h1{
     color: white;
     font-weight: bold;
+    margin-bottom: 50px!important;
 }
 
 h1 {
@@ -65,7 +75,7 @@ h2 {
 
 h4{
     color: white;
-    font-size: 15px!important;
+    font-size: 17px!important;
     margin-bottom: 5px;
     font-weight: bold!important;
 }
@@ -103,12 +113,15 @@ h4{
     padding: 40px;
     border-radius: 25px;
     /*width: 90%;*/
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .newsletter p{
     /*font-weight: bold;*/
     color: white;
-    /*padding-left: 20px;*/
+    font-size: 15px;
+    padding-left: 10px;
     /*margin-bottom: 5px;*/
 }
 
