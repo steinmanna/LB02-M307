@@ -16,59 +16,80 @@
 </head>
 <body class="newsletter">
 
-    <form>
-        <p>
-        Anmeldung Newsletter <br>
-        <select name="thema1">
-            <option value="val1" selected>bitte wählen</option>
-          <option value="val2">Frau</option>
-          <option value="val3">Herr</option>
-          <option value="val14">Anderes</option>
-        </select>
-        </p>
-        <p>
+
+<div class="newsletter-form">
+        <form id="newsletterform">
+            <form>
+                <p>
+                <h1>Anmeldung Newsletter </h1>
+                <h4>Anrede</h4>
+                <select name="thema1">
+                    <option value="val1" selected>Bitte auswählen</option>
+                    <option value="val2">Frau</option>
+                    <option value="val3">Herr</option>
+                    <option value="val14">Anderes</option>
+                </select>
+                </p>
+                <p>
+            </form>
+
+            <!--    <form>-->
+            <!--        <p>Vorname</p>-->
+            <!--        <input type="text" name="einName" size="30" maxlength="40">-->
+            <!--        <p>Nachname</p>-->
+            <!--        <input type="text" name="einName" size="30" maxlength="40">-->
+            <!--    </form>-->
+
+            <form>
+                <label for="fname"><h4>Vorname:</h4></label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname"><h4>Nachname:</h4></label><br>
+                <input type="text" id="lname" name="lname">
+            </form>
+
+            <form>
+                <h4>E-Mail</h4>
+                <input type="email" id="email" multiple requried>
+            </form>
+
+            <form>
+
+                <h4>Telefon:</h4>
+                <input type="tel" id="phone" name="phone" placeholder="079 777 22 44" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required><br><br>
+            </form>
+
+
+            <form>
+                <h4> Wie oft wollen Sie unseren Newsletter erhalten?:</h4>
+                <p>
+                    <input type="radio" name="room" value="budget">Wöchentlich<br>
+                    <input type="radio" name="room" value="standard"
+                           checked>Monatlich<br>
+                    <input type="radio" name="room" value="deluxe">Halbjährlich
+                </p>
+            </form>
+            <form>
+<!--                <p>-->
+<!--                <h4>Zu welcher Alters Gruppe gehören Sie?</h4><br>-->
+<!--                <select multiple name="thema2" size="4">-->
+<!--                    <option value="val5">0 - 25</option>-->
+<!--                    <option value="val6" selected>26 - 35</option>-->
+<!--                    <option value="val7">26 - 35</option>-->
+<!--                    <option value="val8" selected>36 +</option>-->
+<!--                </select>-->
+<!--                </p>-->
+
+                    <input type="checkbox" name="extra" id="c1" value="einverstanden1">
+                    <label for="c1"><p>Ich bin einverstanden E-Mails zu erhalten</p></label><br>
+                    <input type="checkbox" name="extra" id="c2" value="einverstanden2">
+                    <label for="c2"><p>Ich bin einverstanden Nachrichten zu erhalten</p></label><br>
+                    <input type="checkbox" name="extra" id="c3" value="einverstanden3">
+                    <label for="c3"><p>Ich habe die Datenschutzerklärung gelesen und bin einvertanden</p></label><br>
+            </form>
         </form>
-        
-        <form>
-                Vorname: 
-                <input type="text" name="einName" size="30" maxlength="40">
-                Nachname
-                <input type="text" name="einName" size="30" maxlength="40">
-        </form>
+    <button class="newsletter-button" onclick="alert('Vielen Dank für die Anmeldung!')" type="submit" form="newsletterform" value="Submit">Abschicken</button>
+</div>
 
-        <input type="email" multiple requried>
-
-        <form>
-        <p> Wie oft willst du unseren Newsletter erhalten?:</p>
-        <p>
-          <input type="radio" name="room" value="budget">Wöchentlich<br>
-          <input type="radio" name="room" value="standard"
-                 checked>Monatlich<br>
-          <input type="radio" name="room" value="deluxe">Halbjährlich
-        </p>
-        </form>
-        <form>
-        <p></p>
-
-        <p>
-            Zu welcher Alters Gruppe gehörst du?<br>
-            <select multiple name="thema2" size="4">
-              <option value="val5">Fast noch Baby</option>
-              <option value="val6" selected>Teene</option>
-              <option value="val7">Hab selbst schon Kinder</option>
-              <option value="val8" selected>Boomer</option>
-            </select>
-            </p>
-
-        
-
-        <p>
-          <input type="checkbox" name="extra" id="c1" value="breakf">
-            <label for="c1">Ja ihr dürft meine Daten Verkaufen</label><br>
-          <input type="checkbox" name="extra" id="c2" value="lunch">
-            <label for="c2">Nein ich habe die AGB-Bestimmungen nicht gelesen</label><br>
-        </p>
-        </form>
         
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -14,15 +14,32 @@ body {
     padding-bottom: 10px;
 }
 
+/*.newsletter-button{*/
+/*    background-color: white;*/
+/*    border-color: pink;*/
+/*    padding: 10px;*/
+/*}*/
+
 .newsletter-button{
+    color: white;
+    background-color: pink;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button{
+    margin-top: 20px!important;
+    border-radius: 20px!important;
     background-color: white;
-    border-color: pink;
+    border: 5px palevioletred solid;
     padding: 10px;
 }
 
-.newsletter-button a{
-    color: gray;
 
+.newsletter h1{
+    color: white;
+    font-weight: bold;
 }
 
 h1 {
@@ -46,7 +63,12 @@ h2 {
     font-weight: bold;
 }
 
-
+h4{
+    color: white;
+    font-size: 15px!important;
+    margin-bottom: 5px;
+    font-weight: bold!important;
+}
 
 .smoothie-name{
     background-color: white;
@@ -54,11 +76,6 @@ h2 {
     font-size: 22px;
     text-align: center;
     text-transform: uppercase;
-}
-
-button{
-    margin-top: 20px!important;
-    border-radius: 20px!important;
 }
 
   .p1{
@@ -81,6 +98,23 @@ button{
     font-weight: bold;
 }
 
+.newsletter-form{
+    border: white solid 10px;
+    padding: 40px;
+    border-radius: 25px;
+    /*width: 90%;*/
+}
+
+.newsletter p{
+    /*font-weight: bold;*/
+    color: white;
+    /*padding-left: 20px;*/
+    /*margin-bottom: 5px;*/
+}
+
+form{
+    margin-bottom: 30px;
+}
 
 * {
     box-sizing: content-box;
@@ -122,7 +156,7 @@ button{
   }
 
   .newsletter{
-      background-color: pink;
+      background-color: palevioletred;
   }
 
   footer{
