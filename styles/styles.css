@@ -38,9 +38,9 @@ button{
 
 .abort{
     color: white;
-    background-color: pink;
+    background-color: palevioletred;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 10px;
     margin-top: 20px!important;
     border-radius: 20px!important;
     padding: 10px;
@@ -115,6 +115,8 @@ h4{
     /*width: 90%;*/
     margin-left: 25%;
     margin-right: 25%;
+    background-color: palevioletred;
+
 }
 
 .newsletter p{
@@ -169,7 +171,7 @@ form{
   }
 
   .newsletter{
-      background-color: palevioletred;
+      background-color: pink;
   }
 
   footer{
