@@ -14,12 +14,6 @@ body {
     padding-bottom: 10px;
 }
 
-/*.newsletter-button{*/
-/*    background-color: white;*/
-/*    border-color: pink;*/
-/*    padding: 10px;*/
-/*}*/
-
 .newsletter-button{
     color: white;
     background-color: pink;
@@ -112,7 +106,6 @@ h4{
     border: white solid 10px;
     padding: 40px;
     border-radius: 25px;
-    /*width: 90%;*/
     margin-left: 25%;
     margin-right: 25%;
     background-color: palevioletred;
@@ -120,11 +113,9 @@ h4{
 }
 
 .newsletter p{
-    /*font-weight: bold;*/
     color: white;
     font-size: 15px;
     padding-left: 10px;
-    /*margin-bottom: 5px;*/
 }
 
 form{
