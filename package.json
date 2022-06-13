@@ -1,0 +1,23 @@
+{
+  "name": "lb02-m307",
+  "version": "1.0.0",
+  "description": "LB02",
+  "main": "index.js",
+  "dependencies": {
+    "mongodb": "^4.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steinmanna/LB02-M307.git"
+  },
+  "author": "shara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steinmanna/LB02-M307/issues"
+  },
+  "homepage": "https://github.com/steinmanna/LB02-M307#readme"
+}
