@@ -109,12 +109,26 @@ h4{
     margin-left: 25%;
     margin-right: 25%;
     background-color: palevioletred;
+}
 
+.form{
+    border: white solid 10px;
+    padding: 40px;
+    border-radius: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: palevioletred;
 }
 
 .newsletter p{
     color: white;
     font-size: 15px;
+    padding-left: 10px;
+}
+
+.form p{
+    color: white;
+    font-size: 8px;
     padding-left: 10px;
 }
 
@@ -129,7 +143,6 @@ form{
     font-family: Verdana, sans-serif;
     margin: 0
   }
-
 
   .slideshow-container {
     max-width: 1000px;
@@ -163,9 +176,89 @@ form{
 
   .newsletter{
       background-color: pink;
+      color: white;
+  }
+
+.form{
+      background-color: pink;
+      color: white;
   }
 
   footer{
     margin-top: 35px;
       font-size: 10px;
   }
+
+
+
+
+
+  /*FORM*/
+
+  :root{
+      --success-color: #2ecc71;
+      --error-color: #e74c3c;
+  }
+
+  .form.control.success input{
+      border-color: var(--success-color);
+  }
+
+.form.control.error input{
+    border-color: var(--error-color);
+}
+
+.form-control{
+    height: 100% !important;
+    border: transparent !important;
+    background-color: transparent!important;
+}
+
+.form-control label{
+    display: block;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    display: none;
+    font-size: .75rem;
+}
+
+.form-control.success input {
+    border: solid 2px var(--success-color);
+}
+
+.form-control.error input {
+    border: solid 2px var(--error-color);
+}
+
+input {
+    outline: none;
+    border: none;
+    padding: 5px;
+    color: palevioletred;
+    background-color: white;
+    width: 100%;
+}
+
+.form-select{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-control.error small {
+    display: block;
+}

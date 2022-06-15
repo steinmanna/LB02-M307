@@ -5,67 +5,83 @@
     <meta charset="UTF-8">
     <title>true fruits</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon/favicon_package_v0.16/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Newsletter</title>
 </head>
 <body class="newsletter">
 <a class="abort" href="index.html">zurück</a>
-<div class="newsletter-form">
-        <form id="newsletterform">
-            <form>
-                <p>
-                <h1>Anmeldung Newsletter </h1>
-                <h4>Anrede</h4>
-                <select name="thema1">
-                    <option id="choose" value="val1" selected>Bitte auswählen</option>
-                    <option id="she" value="val2">Frau</option>
-                    <option id="he" value="val3">Herr</option>
-                    <option id="else" value="val14">Anderes</option>
-                </select>
-                </p>
-                <p>
-            </form>
 
-            <form>
-                <label for="name"><h4>Vorname:</h4></label><br>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="surname"><h4>Nachname:</h4></label><br>
-                <input type="text" id="surname" name="surname">
-            </form>
+<main class="formular">
 
-            <form>
-                <h4>E-Mail</h4>
-                <input  type="email" placeholder="news@truefruits.com" id="email" pattern="[\w-\.]+@([\w-]+\.)+[\w-]{2,4}">
-            </form>
+    <div class="container">
+        <form id="form" class="form">
+            <h1>Anmeldung Newsletter</h1>
+            <select id="gender" class="form-select form-select-sm" aria-label="Default select example">
+                <option selected>Bitte auswählen</option>
+                <option value="1">Frau</option>
+                <option value="2">Herr</option>
+                <option value="3">Andere</option>
+            </select>
+            <div class="form-control">
+                <label for="vorname">Vorname</label>
+                <input type="text" id="vorname" placeholder="Vorname eingeben"/>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="nachname">Nachname</label>
+                <input type="text" id="nachname" placeholder="Nachname eingeben"/>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="e-mail">E-Mail</label>
+                <input type="text" id="e-mail" placeholder="E-Mail eingeben"/>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="telefonnummer">Telefonnummer</label>
+                <input type="tel" id="telefonnummer" name="phone" placeholder="079 777 22 44">
+                <small>Error message</small>
+            </div>
 
-            <form>
-                <h4>Telefon:</h4>
-                <input type="tel" id="phone" name="phone" placeholder="079 777 22 44" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required><br><br>
-            </form>
+            <div class="form-control">
+                <label for="exampleDataList" class="form-label">Auf welcher Sprache wollen Sie den Newsletter erhalten?</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Bitte Sprache wählen">
+                <datalist id="datalistOptions">
+                    <option value="Deutsch">
+                    <option value="Englisch">
+                    <option value="Französisch">
+                    <option value="Italienisch">
+                </datalist>
+                <small>Error message</small>
+            </div>
 
+            <div class="form-control">
+                <div class="form-check">
+                    <input class="form-check-input" id="emails" type="checkbox" value="emails">
+                    <label class="form-check-label" for="emails">Ich bin einverstanden E-Mails zu erhalten</label><br>
+                    <small>Error message</small>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" id="nachrichten" type="checkbox" value="nachrichten">
+                    <label class="form-check-label" for="nachrichten">Ich bin einverstanden Nachrichten zu erhalten</label><br>
+                    <small>Error message</small>
+                </div>
+            </div>
 
-            <form>
-                <h4> Wie oft wollen Sie unseren Newsletter erhalten?:</h4><br>
-                <p>
-                    <input type="radio"  id="weekly" name="room" value="weekly"checked>Wöchentlich<br>
-                    <input type="radio" id="monthly" name="room" value="monthly">Monatlich<br>
-                    <input type="radio"  id="biyearly"name="room" value="biearly">Halbjährlich
-                </p>
-            </form>
-            <form>
-                    <input type="checkbox" id="agreemail" value="einverstanden1">
-                    <label for="agreemail"><p>Ich bin einverstanden E-Mails zu erhalten</p></label><br>
-
-                    <input type="checkbox" id="agreeconditions" value="einverstanden3">
-                    <label for="agreeconditions"><p>Ich habe die Datenschutzerklärung gelesen und bin einvertanden</p></label><br>
-            </form>
-        </form>
-            <button  id="submit" class="newsletter-button" onclick="alert('Vielen Dank für die Anmeldung!')" type="submit" form="newsletterform" value="Submit">Abschicken</button>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="scripts/validation.js"></script>
-<script src="scripts/forms.js"></script>
+                    <button type="submit">Senden</button>
+                </form>
+            </div>
+        </main>
+        <script src="scripts/validation.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,9 +4,13 @@
   "description": "LB02",
   "main": "index.js",
   "dependencies": {
-    "mongodb": "^4.7.0"
+    "esm": "^3.2.25",
+    "express": "^4.18.1",
+    "multer-js": "^1.4.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
