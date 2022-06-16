@@ -34,7 +34,7 @@ button{
     color: white;
     background-color: palevioletred;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 15px;
     margin-top: 20px!important;
     border-radius: 20px!important;
     padding: 10px;
@@ -117,7 +117,6 @@ h4{
     border-radius: 25px;
     margin-left: 25%;
     margin-right: 25%;
-    background-color: palevioletred;
 }
 
 .newsletter p{
@@ -175,12 +174,12 @@ form{
   }
 
   .newsletter{
-      background-color: pink;
+      background-color: palevioletred;
       color: white;
   }
 
 .form{
-      background-color: pink;
+      background-color: lightpink;
       color: white;
   }
 
@@ -188,7 +187,6 @@ form{
     margin-top: 35px;
       font-size: 10px;
   }
-
 
 
 
@@ -219,8 +217,8 @@ form{
 }
 
 .form-control input:focus {
-    outline: 0;
-    border-color: #777;
+    outline: 1px;
+    border-color: palevioletred;
 }
 
 .form-control.success input {
