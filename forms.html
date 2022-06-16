@@ -25,12 +25,15 @@
     <div class="container">
         <form id="form" class="form">
             <h1>Anmeldung Newsletter</h1>
-            <select id="gender" class="form-select form-select-sm" aria-label="Default select example">
-                <option selected>Bitte auswählen</option>
-                <option value="1">Frau</option>
-                <option value="2">Herr</option>
-                <option value="3">Andere</option>
-            </select>
+            <div class="form-control">
+                <select id="anrede" class="form-select form-select-sm" aria-label="Default select example">
+                    <option value="" selected>Bitte auswählen</option>
+                    <option value="1">Frau</option>
+                    <option value="2">Herr</option>
+                    <option value="3">Andere</option>
+                </select>
+                <small>Error message</small>
+            </div>
             <div class="form-control">
                 <label for="vorname">Vorname</label>
                 <input type="text" id="vorname" placeholder="Vorname eingeben"/>
@@ -53,8 +56,8 @@
             </div>
 
             <div class="form-control">
-                <label for="exampleDataList" class="form-label">Auf welcher Sprache wollen Sie den Newsletter erhalten?</label>
-                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Bitte Sprache wählen">
+                <label for="Sprachauswahl" class="form-label">Auf welcher Sprache wollen Sie den Newsletter erhalten?</label>
+                <input class="form-control" list="datalistOptions" id="Sprachauswahl" placeholder="Bitte Sprache wählen">
                 <datalist id="datalistOptions">
                     <option value="Deutsch">
                     <option value="Englisch">
@@ -66,13 +69,13 @@
 
             <div class="form-control">
                 <div class="form-check">
-                    <input class="form-check-input" id="emails" type="checkbox" value="emails">
-                    <label class="form-check-label" for="emails">Ich bin einverstanden E-Mails zu erhalten</label><br>
+                    <input class="form-check-input" id="kreuz" type="checkbox" value="emails">
+                    <label class="form-check-label" for="kreuz">Ich bin einverstanden E-Mails zu erhalten</label>
                     <small>Error message</small>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" id="nachrichten" type="checkbox" value="nachrichten">
-                    <label class="form-check-label" for="nachrichten">Ich bin einverstanden Nachrichten zu erhalten</label><br>
+                    <input class="form-check-input" id="einverständnis" type="checkbox" value="nachrichten">
+                    <label class="form-check-label" for="einverständnis">Ich bin einverstanden Nachrichten zu erhalten</label>
                     <small>Error message</small>
                 </div>
             </div>

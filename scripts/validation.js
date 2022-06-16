@@ -1,10 +1,14 @@
 let VALID;
 
 const form = document.getElementById('form');
+const gender = document.getElementById('anrede');
 const name = document.getElementById('vorname');
 const surname = document.getElementById('nachname');
 const email = document.getElementById('e-mail');
 const phone = document.getElementById('telefonnummer');
+const nachrichten = document.getElementById('kreuz');
+const emails = document.getElementById('einverständnis');
+const sprache = document.getElementById('Sprachauswahl');
 
 
 // Show input error message
@@ -49,13 +53,24 @@ function checkPhone(input) {
 function checkRequired(inputArr) {
     let isRequired = false;
     inputArr.forEach(function(input) {
-        if (input.value.trim() === '') {
-            showError(input, `${getFieldName(input)} wird benötigt`);
-            isRequired = true;
-            VALID = false;
+        if(input.type === 'checkbox') {
+            if (!input.checked) {
+                showError(input, `${getFieldName(input)} wird benötigt`);
+                isRequired = true;
+                VALID = false;
+            } else {
+                showSuccess(input);
+            }
         } else {
-            showSuccess(input);
+            if (input.value.trim() === '') {
+                showError(input, `${getFieldName(input)} wird benötigt`);
+                isRequired = true;
+                VALID = false;
+            } else {
+                showSuccess(input);
+            }
         }
+
     });
 
     return isRequired;
@@ -63,6 +78,7 @@ function checkRequired(inputArr) {
 
 // Check input length
 function checkLength(input, min, max) {
+    console.log(getFieldName(input) + ": " + input.value );
     if (input.value.length < min) {
         showError(input,
             `${getFieldName(input)} muss mindestens ${min} Buchstaben beinhalten`
@@ -82,13 +98,19 @@ function getFieldName(input) {
 }
 
 function validateForm(){
-    if(!checkRequired([name, surname, email, phone])){
-        //Aufgabe: Validierung der Länge für Vorname (2 bis 20) und Nachname (2 bis 50)
+    if(!checkRequired([name])) {
         checkLength(name, 3, 50);
+    }
+    if(!checkRequired([surname])) {
         checkLength(surname, 3, 50);
+    }
+    if(!checkRequired([email])) {
         checkEmail(email);
+    }
+    if(!checkRequired([phone])) {
         checkPhone(phone);
     }
+    checkRequired([gender, nachrichten, emails, sprache]);
 }
 
 
