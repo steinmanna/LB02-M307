@@ -1,19 +1,16 @@
 body {
     padding: 4% 7% 1% 10%;
 }
-
 .navbar img{
     background-color: white!important;
     padding: 20px;
     width: auto;
     height: 200px;
 }
-
 .logo{
     height: 100px;
     padding-bottom: 10px;
 }
-
 .newsletter-button{
     color: white;
     background-color: pink;
@@ -21,7 +18,6 @@ body {
     font-weight: bold;
     font-size: 20px;
 }
-
 button{
     margin-top: 20px!important;
     border-radius: 20px!important;
@@ -29,7 +25,6 @@ button{
     border: 5px palevioletred solid;
     padding: 10px 20px 10px 20px;
 }
-
 .abort{
     color: white;
     background-color: palevioletred;
@@ -39,13 +34,11 @@ button{
     border-radius: 20px!important;
     padding: 10px;
 }
-
 .newsletter h1{
     color: white;
     font-weight: bold;
     margin-bottom: 50px!important;
 }
-
 h1 {
     color: pink;
     text-align: center;
@@ -53,27 +46,23 @@ h1 {
     margin: 20px 0 20px 0;
     font-weight: bolder;
 }
-
 .p {
     font-size: medium;
     text-align: center;
     color: black;
 }
-
 h2 {
     color: palevioletred;
     text-align: justify;
     margin: 20px 0 20px 0;
     font-weight: bold;
 }
-
 h4{
     color: white;
     font-size: 17px!important;
     margin-bottom: 5px;
     font-weight: bold!important;
 }
-
 .smoothie-name{
     background-color: white;
     padding: 0;
@@ -81,27 +70,21 @@ h4{
     text-align: center;
     text-transform: uppercase;
 }
-
   .p1{
       margin-bottom: 30px;
   }
-
   .p2{
       margin-top: 50px;
   }
-
   h3{
     color: pink;
     padding-top: 30px;
     text-transform: uppercase;
   }
-
-
 .smoothie{
     margin-bottom: 20px;
     font-weight: bold;
 }
-
 .newsletter-form{
     border: white solid 10px;
     padding: 40px;
@@ -110,7 +93,6 @@ h4{
     margin-right: 25%;
     background-color: palevioletred;
 }
-
 .form{
     border: white solid 10px;
     padding: 40px;
@@ -118,23 +100,19 @@ h4{
     margin-left: 25%;
     margin-right: 25%;
 }
-
 .newsletter p{
     color: white;
     font-size: 15px;
     padding-left: 10px;
 }
-
 .form p{
     color: white;
     font-size: 8px;
     padding-left: 10px;
 }
-
 form{
     margin-bottom: 30px;
 }
-
 * {
     box-sizing: content-box;
   }
@@ -142,14 +120,11 @@ form{
     font-family: Verdana, sans-serif;
     margin: 0
   }
-
   .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
   }
-
-  
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 5s;
@@ -172,77 +147,58 @@ form{
       opacity: 1
     }
   }
-
   .newsletter{
       background-color: palevioletred;
       color: white;
   }
-
 .form{
       background-color: lightpink;
       color: white;
   }
-
   footer{
     margin-top: 35px;
       font-size: 10px;
   }
-
-
-
-
   /*FORM*/
-
   :root{
       --success-color: #2ecc71;
       --error-color: #e74c3c;
   }
-
   .form.control.success input{
       border-color: var(--success-color);
   }
-
 .form.control.error input{
     border-color: var(--error-color);
 }
-
 .form-control{
     height: 100% !important;
     border: transparent !important;
     background-color: transparent!important;
 }
-
 .form-control label{
     display: block;
 }
-
 .form-control input:focus {
     outline: 1px;
     border-color: palevioletred;
 }
-
 .form-control.success input {
     border-color: var(--success-color);
 }
-
 .form-control.error input {
     border-color: var(--error-color);
 }
-
 .form-control small {
     color: var(--error-color);
     display: none;
     font-size: .75rem;
 }
-
 .form-control.success input {
     border: solid 2px var(--success-color);
 }
-
 .form-control.error input {
     border: solid 2px var(--error-color);
 }
-
 input {
     outline: none;
     border: none;
@@ -251,12 +207,10 @@ input {
     background-color: white;
     width: 100%;
 }
-
 .form-select{
     width: 100%;
     margin-bottom: 10px;
 }
-
 .form-control.error small {
     display: block;
 }
