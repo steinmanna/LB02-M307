@@ -1,2 +1,4 @@
-/favicon
-/img
+favicon/
+img/
+.idea
+.DS_Store
