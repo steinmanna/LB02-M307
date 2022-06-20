@@ -4,14 +4,13 @@ const form = document.getElementById('form');
 const gender = document.getElementById('anrede');
 const name = document.getElementById('vorname');
 const surname = document.getElementById('nachname');
-const email = document.getElementById('e-mail');
+const email = document.getElementById('email');
 const phone = document.getElementById('telefonnummer');
 const nachrichten = document.getElementById('kreuz');
-const emails = document.getElementById('einverständnis');
-const sprache = document.getElementById('Sprachauswahl');
+const emails = document.getElementById('einverstaendnis');
+const sprache = document.getElementById('sprachauswahl');
 
 
-// Show input error message
 function showError(input, message) {
     const formControl = input.parentElement;
     formControl.className = 'form-control error';
@@ -19,14 +18,12 @@ function showError(input, message) {
     small.innerText = message;
 }
 
-// Show success outline
 function showSuccess(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
 
 }
 
-// Check email is valid
 function checkEmail(input) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (re.test(input.value.trim())) {
@@ -38,7 +35,6 @@ function checkEmail(input) {
 }
 
 
-// Check phone is valid
 function checkPhone(input) {
     const re = /(\b(0041|0)|\B\+41)(\s?\(0\))?(\s)?[1-9]{2}(\s)?[0-9]{3}(\s)?[0-9]{2}(\s)?[0-9]{2}\b/;
     if (re.test(input.value.trim())) {
@@ -49,7 +45,6 @@ function checkPhone(input) {
     }
 }
 
-// Check required fields
 function checkRequired(inputArr) {
     let isRequired = false;
     inputArr.forEach(function(input) {
@@ -76,7 +71,13 @@ function checkRequired(inputArr) {
     return isRequired;
 }
 
-// Check input length
+function checkLastname(input){
+
+}
+function checkFirstname(input){
+
+}
+
 function checkLength(input, min, max) {
     console.log(getFieldName(input) + ": " + input.value );
     if (input.value.length < min) {
@@ -92,7 +93,6 @@ function checkLength(input, min, max) {
     }
 }
 
-// Get fieldname
 function getFieldName(input) {
     return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
@@ -114,12 +114,10 @@ function validateForm(){
 }
 
 
-// Event listeners
 form.addEventListener('submit', function(e) {
     VALID = true;
     e.preventDefault();
 
-    //First validate form
     validateForm();
     if (VALID){
         alert('Vielen Dank für Ihre Anmeldung!')

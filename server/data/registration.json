@@ -1,0 +1,41 @@
+[
+  {
+    "id": "c14ba738-6030-42a2-a31a-f2391670b81d",
+    "firstname": "Petra",
+    "lastname": "Muster",
+    "username": "musterpetra",
+    "number": "0791571471",
+    "email": "muster.petra@gmx.ch",
+    "password": "1234567"
+  },
+  {
+    "anrede": "frau",
+    "vorname": "shara",
+    "nachname": "ahmed",
+    "email": "ahmed.shara04@gmail.com",
+    "telefonnummer": "+41 603 48 66",
+    "kreuz": "true",
+    "einverstaendnis": "true",
+    "sprachauswahl": "deutsch"
+  },
+  {
+    "anrede": "frau",
+    "vorname": "shara",
+    "nachname": "ahmed",
+    "email": "ahmed.shara04@gmail.com",
+    "telefonnummer": "+41 603 48 66",
+    "kreuz": "true",
+    "einverstaendnis": "true",
+    "sprachauswahl": "deutsch"
+  },
+  {
+    "anrede": "herr",
+    "vorname": "stefan",
+    "nachname": "bauer",
+    "email": "stefan.bauer@gmail.com",
+    "telefonnummer": "+41 976 99 66",
+    "kreuz": "true",
+    "einverstaendnis": "true",
+    "sprachauswahl": "englisch"
+  }
+]
