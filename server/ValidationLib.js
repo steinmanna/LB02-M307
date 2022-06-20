@@ -3,7 +3,7 @@ function showError(id, message) {
 }
 
 function showSuccess(id) {
-    return `${id} successfully validate!`;
+    return `${id} Erfolgreich validiert!`;
 }
 
 function checkEmail(id,input) {
@@ -38,37 +38,6 @@ function checkNumber(id,input) {
     return result;
 }
 
-function checkLastname(id,input) {
-    let result = {
-        isNotValid: false,
-        msg: showSuccess(id)
-    }
-    const re = /^[a-zA-Z]+$/;
-    if (!re.test(input.trim())) {
-        result = {
-            isNotValid: true,
-            msg: showError(id, 'Nachname ist nicht gültig')
-        }
-    }
-    return result;
-}
-
-
-function checkFirstname(id,input) {
-    let result = {
-        isNotValid: false,
-        msg: showSuccess(id)
-    }
-    const re = /^0(2[1-246-7]|3[1-4]|4[13-4]|5[25-6]|6[1-2]|7[15-68-9]|8[17]|91)[0-9]{7}/;
-    if (!re.test(input.trim())) {
-        result = {
-            isNotValid: true,
-            msg: showError(id, 'Vorname ist nicht gültig')
-        }
-    }
-    return result;
-}
-
 function checkRequired(id, input) {
     //Default: is valid
     let result = {
@@ -78,7 +47,7 @@ function checkRequired(id, input) {
     if (input.trim() === '') {
         result = {
             isNotValid: true,
-            msg: showError(id, `${input.toString()} is required`)
+            msg: showError(id, `${input.toString()} wird benötigt`)
 
         }
     }
@@ -94,13 +63,13 @@ function checkLength(id, input, min, max) {
         result = {
             isNotValid: true,
             msg: showError(id,
-            `${id} must be at least ${min} characters`)
+            `${id} muss mindestens ${min} Zeichen haben`)
         }
     } else if (input.length > max) {
         result = {
             isNotValid: true,
             msg: showError(id,
-                `${id} must be less than ${max} characters`)
+                `${id} kann maximal ${max} Zeichen haben`)
         }
     }
     return result;

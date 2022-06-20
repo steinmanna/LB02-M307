@@ -30,15 +30,12 @@ app.get('/test1', (req, res) => {
     res.send(id);
 });
 
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
 
 app.post('/register', (req, res) => {
 
     const HTTP_STATUS_NO_ACCEPTABLE = 406;
-
 
     let userObj = {
         "id": uuidv4(),

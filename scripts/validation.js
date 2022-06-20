@@ -71,13 +71,6 @@ function checkRequired(inputArr) {
     return isRequired;
 }
 
-function checkLastname(input){
-
-}
-function checkFirstname(input){
-
-}
-
 function checkLength(input, min, max) {
     console.log(getFieldName(input) + ": " + input.value );
     if (input.value.length < min) {

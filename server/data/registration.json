@@ -37,5 +37,25 @@
     "kreuz": "true",
     "einverstaendnis": "true",
     "sprachauswahl": "englisch"
+  },
+  {
+    "anrede": "herr",
+    "vorname": "hans",
+    "nachname": "muster",
+    "email": "ahmed.hi@gmail.com",
+    "telefonnummer": "+41 603 48 66",
+    "kreuz": "true",
+    "einverstaendnis": "true",
+    "sprachauswahl": "englisch"
+  },
+  {
+    "anrede": "Frau",
+    "vorname": "joanna",
+    "nachname": "Ferkel",
+    "email": "ahmed.hi@gmail.com",
+    "telefonnummer": "+41 603 48 66",
+    "kreuz": "true",
+    "einverstaendnis": "true",
+    "sprachauswahl": "englisch"
   }
 ]
