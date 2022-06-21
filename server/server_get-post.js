@@ -10,12 +10,10 @@ const staticPath = './data/';
 const registrationFile = staticPath+'registration.json';
 const HTTP_STATUS_NO_ACCEPTABLE = 406;
 
-//Get request
 app.get('/form', (req,res) => {
     res.send(`Get wurde erfolgreich aufgerufen!`);
 });
 
-//Post request
 app.post('/form', (req,res) => {
     console.log(req.body)
     let userObj = {
@@ -44,7 +42,7 @@ app.post('/form', (req,res) => {
             .catch(error => {
                 console.error(error);
             });
-        res.status(201).send(`User ${userObj.nachname} inserted!`);
+        res.status(201).send(`${userObj.vorname} ${userObj.nachname} hat sich für den Newsletter angemeldet!`);
     }
 });
 

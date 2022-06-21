@@ -1,12 +1,10 @@
 'use strict';
-
 let express = require("express");
 let bodyParser = require("body-parser");
 let app     = express();
 const { v4: uuidv4 } = require('uuid');
 const UserRepository = require('./UserRepository');
 const Validation = require('./ValidationService');
-
 
 const port = process.env.PORT || 3000;
 const server = app.listen(port);
@@ -16,14 +14,12 @@ server.timeout = 1000 * 60 * 2; // 2 minutes
 const staticPath = './data/';
 const registrationFile = staticPath+'registration.json';
 
-
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Origin', 'http://localhost:63342');
     res.header('Content-Type', 'application/json');
     next();
 });
-
 
 app.get('/test1', (req, res) => {
     const id = uuidv4();

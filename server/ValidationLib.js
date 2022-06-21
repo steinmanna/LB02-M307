@@ -21,7 +21,6 @@ function checkEmail(id,input) {
     return result;
 }
 
-
 function checkNumber(id,input) {
     let result = {
         isNotValid: false,
@@ -48,7 +47,6 @@ function checkRequired(id, input) {
         result = {
             isNotValid: true,
             msg: showError(id, `${input.toString()} wird benötigt`)
-
         }
     }
     return result;
@@ -74,7 +72,6 @@ function checkLength(id, input, min, max) {
     }
     return result;
 }
-
 
 module.exports = {
     checkEmail,
